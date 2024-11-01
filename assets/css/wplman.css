@@ -1,0 +1,91 @@
+
+/**
+        General
+ */
+#new-shortlink{
+    padding: 30px 0 0;
+}
+#list-shortlink{
+    margin: 40px 0 0 0;
+    position: relative;
+}
+#list-shortlink tr.shortlink{
+    transition: background-color 500ms ease-in;
+}
+#list-shortlink tbody.empty{
+    padding: 60px;
+}
+.wplman-table-label{
+    padding: 8px;
+}
+
+#list-shortlink #mask{
+    display: none;
+}
+#list-shortlink.busy #mask{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.9);
+    text-align: center;
+    padding: 10% 0;
+    box-sizing: border-box;
+}
+#list-shortlink #mask> div.loading-msg{
+    margin: 0 auto;
+    text-align: center;
+}
+#list-shortlink #mask span{
+    float: none !important;
+}
+
+
+#shortlink-edit-form{
+    position: relative;
+}
+#shortlink-edit-form .mask{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,0.8);
+    top:0;
+    left:0;
+    padding: 30% 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+#shortlink-edit-form .mask span{
+    float: none !important;
+    margin: 0 auto;
+}
+#shortlink-edit-form.busy .mask{
+    display: block;
+}
+
+.link-group-wrap{
+    min-height: 42px;
+    max-height: 200px;
+    overflow: auto;
+    padding: 0 .9em;
+    border: solid 1px #ddd;
+    background-color: #fdfdfd;
+}
+#shortlink-edit-form .form-table td{
+    text-align: left;
+}
+#shortlink-edit-form .form-table input[type=text],
+#shortlink-edit-form .form-table input[type=url],
+#shortlink-edit-form .form-table textarea{
+    width: 100%;
+    box-sizing: border-box;
+}
+#shortlink-edit-form .form-table label{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#shortlink-datail{
+    text-align: left;
+}
